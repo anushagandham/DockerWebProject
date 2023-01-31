@@ -13,7 +13,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("anushagandham/webpage")
+        app = docker.build("resuanusha/webpage")
     }
 
     
@@ -31,8 +31,8 @@ node {
         
    stage('RunningImages ') {
        sh '''
-         docker pull anushagandham/webpage:latest
-         docker run -d -p 2222:80 anushagandham/webpage
+         docker pull resuanusha/webpage:latest
+         docker run -d -p 2222:80 resuanusha/webpage
        
        '''
          }      
